@@ -1,0 +1,172 @@
+/* Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Welcome Page Background */
+#welcome-section {
+    background-image: url('pro1.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#start-builder {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start-builder:hover {
+    background-color: #0056b3;
+}
+
+/* Form Section Styling */
+#form-section {
+    background-color: rgba(236, 133, 133, 0.9);
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #bac2f2;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+   
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 50%;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Portfolio Display Section */
+#portfolio-section {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: hsl(219, 33%, 92%);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#portfolio-display h3 {
+    font-size: 32px;
+}
+
+#portfolio-display ul {
+    padding: 0;
+    list-style: none;
+}
+
+#portfolio-display ul li {
+    background-color: #acc4ed;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#download-portfolio, #edit-portfolio {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#download-portfolio:hover, #edit-portfolio:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #333;
+    color: #161515;
+}
+
+body.dark-theme input, body.dark-theme textarea, body.dark-theme select {
+    background-color: #625454;
+    color: rgb(20, 18, 18);
+    border: 1px solid #555;
+}
+
+body.dark-theme button {
+    background-color: #555;
+}
+
+body.dark-theme #portfolio-display ul li {
+    background-color: #c3c9f3;
+}
+@media (max-width: 768px) {
+    /* Adjust styles for mobile devices */
+    #form-section {
+        margin: 20px;
+        padding: 20px;
+    }
+}
+

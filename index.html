@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <!-- Welcome Page Section -->
+    <section id="welcome-section" class="center-content">
+        <div class="overlay">
+            <h1>Welcome to My Portfolio Builder</h1>
+            <p>Start building your personalized portfolio with ease.</p>
+            <button id="start-builder">Click Here to Build Your Portfolio</button>
+        </div>
+    </section>
+
+    <!-- Portfolio Form Section (Initially Hidden) -->
+    <section id="form-section" style="display: none;">
+        <h2>Enter Your Details</h2>
+        <form id="portfolioForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="title">Job Title:</label>
+                <input type="text" id="title" placeholder="Your Job Title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bio">Bio:</label>
+                <textarea id="bio" placeholder="A short bio about yourself" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Your Phone Number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="Your Location" required>
+            </div>
+
+            <div class="form-group">
+                <label for="skills">Skills (separate with commas):</label>
+                <input type="text" id="skills" placeholder="HTML, CSS, JavaScript" required>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Work Experience (separate with commas):</label>
+                <textarea id="experience" placeholder="Job roles and companies" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="projects">Projects (separate with commas):</label>
+                <textarea id="projects" placeholder="List of your projects" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="social">Social Media Links (separate with commas):</label>
+                <input type="text" id="social" placeholder="LinkedIn, GitHub, Twitter">
+            </div>
+
+            <div class="form-group">
+                <label for="theme">Choose Theme:</label>
+                <select id="theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+
+            <button type="submit">Build Portfolio</button>
+        </form>
+    </section>
+
+    <!-- Portfolio Display Section (Initially Hidden) -->
+    <section id="portfolio-section" style="display: none;">
+        <h2>My Portfolio</h2>
+        <div id="portfolio-display"></div>
+        
+
+        <button id="edit-portfolio">Edit Portfolio</button>
+        <button id="download-portfolio">Download Portfolio</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
